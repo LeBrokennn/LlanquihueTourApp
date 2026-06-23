@@ -1,0 +1,47 @@
+
+==============================================
+LLANQUIHUE TOUR - SISTEMA DE REGISTROS
+==============================================
+Carga finalizada. Registros cargados: 5
+
+==============================================
+1. Registros cargados desde archivo
+==============================================
+RUT: 11.111.111-1 | Nombre: Ana Torres | Tipo: Guía | Comuna: Puerto Varas | Especialidad: Historia local | Teléfono: +56911111111 | Email: ana.torres@llanquihuetour.cl
+RUT: 12.222.222-2 | Nombre: Pedro Muñoz | Tipo: Operador | Comuna: Frutillar | Especialidad: Reservas y coordinación | Teléfono: +56922222222 | Email: pedro.munoz@llanquihuetour.cl
+RUT: 13.333.333-3 | Nombre: Camila Soto | Tipo: Proveedor | Comuna: Llanquihue | Especialidad: Transporte turístico | Teléfono: +56933333333 | Email: camila.soto@llanquihuetour.cl
+RUT: 14.444.444-4 | Nombre: Matías Vera | Tipo: Guía | Comuna: Puerto Varas | Especialidad: Rutas lacustres | Teléfono: +56944444444 | Email: matias.vera@llanquihuetour.cl
+RUT: 15.555.555-5 | Nombre: Fernanda Lagos | Tipo: Operador | Comuna: Osorno | Especialidad: Atención de clientes | Teléfono: +56955555555 | Email: fernanda.lagos@llanquihuetour.cl
+
+==============================================
+2. Filtro por tipo: Guía
+==============================================
+RUT: 11.111.111-1 | Nombre: Ana Torres | Tipo: Guía | Comuna: Puerto Varas | Especialidad: Historia local | Teléfono: +56911111111 | Email: ana.torres@llanquihuetour.cl
+RUT: 14.444.444-4 | Nombre: Matías Vera | Tipo: Guía | Comuna: Puerto Varas | Especialidad: Rutas lacustres | Teléfono: +56944444444 | Email: matias.vera@llanquihuetour.cl
+
+==============================================
+3. Filtro por comuna: Puerto Varas
+==============================================
+RUT: 11.111.111-1 | Nombre: Ana Torres | Tipo: Guía | Comuna: Puerto Varas | Especialidad: Historia local | Teléfono: +56911111111 | Email: ana.torres@llanquihuetour.cl
+RUT: 14.444.444-4 | Nombre: Matías Vera | Tipo: Guía | Comuna: Puerto Varas | Especialidad: Rutas lacustres | Teléfono: +56944444444 | Email: matias.vera@llanquihuetour.cl
+
+==============================================
+4. Búsqueda simple por nombre: Ana
+==============================================
+RUT: 11.111.111-1 | Nombre: Ana Torres | Tipo: Guía | Comuna: Puerto Varas | Especialidad: Historia local | Teléfono: +56911111111 | Email: ana.torres@llanquihuetour.cl
+
+==============================================
+5. Rutas turísticas disponibles
+==============================================
+Ruta: R001 | Nombre: Ruta gastronómica Frutillar | Categoría: Gastronómica | Comuna base: Frutillar
+Ruta: R002 | Nombre: Paseo lacustre Puerto Varas | Categoría: Lacustre | Comuna base: Puerto Varas
+Ruta: R003 | Nombre: Circuito cultural Llanquihue | Categoría: Cultural | Comuna base: Llanquihue
+
+==============================================
+6. Ejemplo de composición entre clases
+==============================================
+Asignación -> Ana Torres | Ruta gastronómica Frutillar | Turno: Mañana
+
+==============================================
+Ejecución finalizada
+==============================================
