@@ -20,7 +20,7 @@ Aplicar los conceptos de programacion orientada a objetos mediante:
 ## Estructura del proyecto
 
 ```text
-LlanquihueTourApp/
+actividad2-polimorfismo/
 ├── README.md
 └── src/
     ├── model/
@@ -70,7 +70,7 @@ Clase principal ubicada en el paquete `ui`. Permite ejecutar el programa y mostr
 
 ## Instrucciones para compilar y ejecutar
 
-Desde la carpeta principal del proyecto, abrir una terminal y ejecutar:
+Desde la carpeta `actividad2-polimorfismo`, abrir una terminal y ejecutar:
 
 ```bash
 javac -d out src/model/*.java src/data/*.java src/ui/*.java

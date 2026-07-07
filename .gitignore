@@ -1,5 +1,5 @@
-# Project exclude paths
+# Compiled output
 /out/
-LlanquihueTourApp/out/
+**/out/
 *.class
 salida.txt
