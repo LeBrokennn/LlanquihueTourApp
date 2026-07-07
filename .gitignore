@@ -1,2 +1,5 @@
 # Project exclude paths
 /out/
+LlanquihueTourApp/out/
+*.class
+salida.txt
