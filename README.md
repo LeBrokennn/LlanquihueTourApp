@@ -60,46 +60,47 @@ LlanquihueTourApp/
 ├── .gitignore
 └── README.md
 
-# 🗺️ LlanquihueTourApp
+🧩 Actividad 1: registros y colecciones
 
-Aplicación desarrollada en **Java** para apoyar la gestión de información de la agencia turística **Llanquihue Tour**.
+Esta actividad permite gestionar personas vinculadas con la agencia turística.
 
-Este repositorio reúne las actividades realizadas en la asignatura **Desarrollo Orientado a Objetos I**, incorporando progresivamente conceptos como colecciones, lectura de archivos CSV, herencia, polimorfismo, interfaces, estructuras dinámicas e interfaces gráficas.
+Funcionalidades
+Lectura de información desde un archivo CSV.
+Almacenamiento de registros en colecciones.
+Búsqueda de personas por nombre.
+Filtrado por tipo de persona.
+Filtrado por comuna.
+Visualización de resultados por consola.
+🔄 Actividad 2: herencia y polimorfismo
 
----
+Esta actividad amplía el sistema mediante una jerarquía de clases para representar distintos servicios turísticos.
 
-## 📌 Descripción del proyecto
+Conceptos aplicados
+Herencia.
+Polimorfismo.
+Sobrescritura de métodos.
+Colecciones genéricas.
+Separación de responsabilidades.
+Organización mediante paquetes.
+🖥️ Actividad 3: interfaces y GUI
 
-LlanquihueTourApp permite representar y administrar distintos elementos asociados a una agencia de turismo, como personas, servicios turísticos, guías, vehículos y colaboradores externos.
+La tercera actividad incorpora nuevas entidades gestionables por la agencia y una interfaz gráfica básica.
 
-El proyecto se encuentra dividido en actividades independientes, cada una orientada a aplicar nuevos conceptos de programación orientada a objetos.
-
----
-
-## 📂 Actividades desarrolladas
-
-| Actividad | Tema principal | Descripción |
-|---|---|---|
-| `actividad1-registros` | Colecciones y archivos CSV | Carga personas desde un archivo CSV, almacena los registros y permite realizar filtros y búsquedas. |
-| `actividad2-polimorfismo` | Herencia y polimorfismo | Implementa una jerarquía de servicios turísticos y utiliza una colección polimórfica. |
-| `actividad3-interfaces-gui` | Interfaces, `instanceof` y GUI | Gestiona guías, vehículos y colaboradores externos mediante una interfaz gráfica desarrollada con `JOptionPane`. |
-
----
-
-## 🧱 Estructura del repositorio
-
-```text
-LlanquihueTourApp/
-├── actividad1-registros/
-├── actividad2-polimorfismo/
-├── actividad3-interfaces-gui/
-│   └── src/
-│       ├── data/
-│       ├── model/
-│       └── ui/
-├── .gitignore
-└── README.md
-git add README.md
-git commit -m "Mejora documentación del proyecto"
-git push origin master
-
+Entidades disponibles
+Guía turístico.
+Vehículo.
+Colaborador externo.
+Funcionalidades
+Registrar guías turísticos.
+Registrar vehículos.
+Registrar colaboradores externos.
+Mostrar todas las entidades.
+Diferenciar entidades mediante instanceof.
+Visualizar información con JOptionPane.
+🛠️ Tecnologías utilizadas
+Java.
+Swing.
+JOptionPane.
+IntelliJ IDEA.
+Git.
+GitHub.
