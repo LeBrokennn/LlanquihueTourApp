@@ -60,146 +60,45 @@ LlanquihueTourApp/
 ├── .gitignore
 └── README.md
 
----
-🧩 Actividad 1: registros y colecciones
+# 🗺️ LlanquihueTourApp
 
-Esta actividad permite gestionar personas vinculadas con la agencia turística.
+Aplicación desarrollada en **Java** para apoyar la gestión de información de la agencia turística **Llanquihue Tour**.
 
-Funcionalidades
-Lectura de información desde un archivo CSV.
-Almacenamiento de registros en colecciones.
-Búsqueda de personas por nombre.
-Filtrado por tipo de persona.
-Filtrado por comuna.
-Visualización de resultados por consola.
+Este repositorio reúne las actividades realizadas en la asignatura **Desarrollo Orientado a Objetos I**, incorporando progresivamente conceptos como colecciones, lectura de archivos CSV, herencia, polimorfismo, interfaces, estructuras dinámicas e interfaces gráficas.
 
 ---
-🔄 Actividad 2: herencia y polimorfismo
 
-Esta actividad amplía el sistema mediante una jerarquía de clases para representar diferentes servicios turísticos.
+## 📌 Descripción del proyecto
 
-Conceptos aplicados
-Herencia.
-Polimorfismo.
-Sobrescritura de métodos.
-Colecciones genéricas.
-Separación de responsabilidades.
-Organización mediante paquetes.
+LlanquihueTourApp permite representar y administrar distintos elementos asociados a una agencia de turismo, como personas, servicios turísticos, guías, vehículos y colaboradores externos.
+
+El proyecto se encuentra dividido en actividades independientes, cada una orientada a aplicar nuevos conceptos de programación orientada a objetos.
+
 ---
-🖥️ Actividad 3: interfaces y GUI
 
-La tercera actividad incorpora nuevas entidades gestionables por la agencia y una interfaz gráfica básica para facilitar el ingreso y visualización de información.
+## 📂 Actividades desarrolladas
 
-Entidades disponibles
-Guía turístico.
-Vehículo.
-Colaborador externo.
-Funcionalidades
-Registrar guías turísticos.
-Registrar vehículos.
-Registrar colaboradores externos.
-Mostrar todas las entidades registradas.
-Diferenciar entidades mediante instanceof.
-Visualizar información utilizando cuadros de diálogo.
-Validar entradas numéricas básicas.
+| Actividad | Tema principal | Descripción |
+|---|---|---|
+| `actividad1-registros` | Colecciones y archivos CSV | Carga personas desde un archivo CSV, almacena los registros y permite realizar filtros y búsquedas. |
+| `actividad2-polimorfismo` | Herencia y polimorfismo | Implementa una jerarquía de servicios turísticos y utiliza una colección polimórfica. |
+| `actividad3-interfaces-gui` | Interfaces, `instanceof` y GUI | Gestiona guías, vehículos y colaboradores externos mediante una interfaz gráfica desarrollada con `JOptionPane`. |
+
 ---
-🧬 Diseño orientado a objetos
 
-La actividad 3 utiliza una interfaz común y una jerarquía de clases:
+## 🧱 Estructura del repositorio
 
-Registrable
-     ↑
-RecursoAgencia
-     ↑
- ┌──────────────────┬──────────────┬─────────────────────┐
-GuiaTuristico     Vehiculo      ColaboradorExterno
-Interfaz Registrable
-
-Define el comportamiento común de todas las entidades:
-
-String mostrarResumen();
-Superclase RecursoAgencia
-
-Contiene los atributos compartidos:
-
-ID.
-Nombre.
-Clase GestorEntidades
-
-Administra los objetos mediante:
-
-ArrayList<Registrable>
-
-También utiliza instanceof para reconocer el tipo concreto de cada objeto y aplicar una lógica diferenciada.
----
-▶️ Cómo ejecutar la actividad 3
-Clonar el repositorio:
-git clone https://github.com/LeBrokennn/LlanquihueTourApp.git
-Abrir el proyecto en IntelliJ IDEA.
-Abrir la carpeta:
-actividad3-interfaces-gui
-Verificar que src esté configurada como Sources Root.
-Ejecutar:
-src/ui/Main.java
-Seleccionar la opción Run Main.main().
----
-🛠️ Tecnologías utilizadas
-Java.
-Java Swing.
-JOptionPane.
-IntelliJ IDEA.
-Git.
-GitHub.
-Programación orientada a objetos.
----
-📚 Conceptos aplicados
-Clases y objetos.
-Encapsulamiento.
-Herencia.
-Polimorfismo.
-Clases abstractas.
-Interfaces.
-Sobrescritura de métodos.
-Colecciones genéricas.
-ArrayList.
-Operador instanceof.
-Manejo de excepciones.
-Interfaces gráficas.
-Organización modular mediante paquetes.
----
-✅ Buenas prácticas
-Nombres descriptivos para clases, atributos y métodos.
-Separación de responsabilidades.
-Organización del código por paquetes.
-Atributos privados.
-Reutilización mediante herencia.
-Programación orientada a interfaces.
-Validación de datos.
-Código ordenado y legible.
----
-👩‍💻 Autora
-
-Javiera Paz Saavedra Pérez
-
-Estudiante de Analista Programador
-Duoc UC
-
-Asignatura: Desarrollo Orientado a Objetos I
----
-📄 Estado del proyecto
-
-Proyecto académico desarrollado de manera progresiva.
-
-La versión actual incorpora registros, colecciones, lectura de archivos CSV, herencia, polimorfismo, interfaces, validación de tipos e interfaz gráfica.
-
-
-Para actualizarlo en la carpeta correcta:
-
-```powershell
-cd C:\Users\LeBroken\Downloads\LlanquihueTourApp
-
-Abre el README.md de esa carpeta, reemplaza su contenido y guarda. Luego ejecuta:
-
+```text
+LlanquihueTourApp/
+├── actividad1-registros/
+├── actividad2-polimorfismo/
+├── actividad3-interfaces-gui/
+│   └── src/
+│       ├── data/
+│       ├── model/
+│       └── ui/
+├── .gitignore
+└── README.md
 git add README.md
 git commit -m "Mejora documentación del proyecto"
 git push origin master
