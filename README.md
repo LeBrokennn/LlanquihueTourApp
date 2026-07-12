@@ -60,15 +60,19 @@ LlanquihueTourApp/
 ├── .gitignore
 └── README.md
 
-
 ## 🧩 Actividad 1: registros y colecciones
 
 Esta actividad permite gestionar personas vinculadas con la agencia turística.
 
-Funcionalidades
-Lectura de información desde un archivo CSV.
-Almacenamiento de registros en colecciones.
-Búsqueda de personas por nombre.
-Filtrado por tipo de persona.
+### Funcionalidades
+
+- Lectura de información desde un archivo CSV.
+- Almacenamiento de registros en colecciones.
+- Búsqueda de personas por nombre.
+- Filtrado por tipo de persona.
+- Filtrado por comuna.
+- Visualización de resultados por consola.
 Filtrado por comuna.
 Visualización de resultados por consola.
+
+
