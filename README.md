@@ -59,6 +59,8 @@ LlanquihueTourApp/
 │
 ├── .gitignore
 └── README.md
+
+---
 🧩 Actividad 1: registros y colecciones
 
 Esta actividad permite gestionar personas vinculadas con la agencia turística.
@@ -70,6 +72,8 @@ Búsqueda de personas por nombre.
 Filtrado por tipo de persona.
 Filtrado por comuna.
 Visualización de resultados por consola.
+
+---
 🔄 Actividad 2: herencia y polimorfismo
 
 Esta actividad amplía el sistema mediante una jerarquía de clases para representar diferentes servicios turísticos.
@@ -81,6 +85,7 @@ Sobrescritura de métodos.
 Colecciones genéricas.
 Separación de responsabilidades.
 Organización mediante paquetes.
+---
 🖥️ Actividad 3: interfaces y GUI
 
 La tercera actividad incorpora nuevas entidades gestionables por la agencia y una interfaz gráfica básica para facilitar el ingreso y visualización de información.
@@ -97,6 +102,7 @@ Mostrar todas las entidades registradas.
 Diferenciar entidades mediante instanceof.
 Visualizar información utilizando cuadros de diálogo.
 Validar entradas numéricas básicas.
+---
 🧬 Diseño orientado a objetos
 
 La actividad 3 utiliza una interfaz común y una jerarquía de clases:
@@ -125,7 +131,7 @@ Administra los objetos mediante:
 ArrayList<Registrable>
 
 También utiliza instanceof para reconocer el tipo concreto de cada objeto y aplicar una lógica diferenciada.
-
+---
 ▶️ Cómo ejecutar la actividad 3
 Clonar el repositorio:
 git clone https://github.com/LeBrokennn/LlanquihueTourApp.git
@@ -136,6 +142,7 @@ Verificar que src esté configurada como Sources Root.
 Ejecutar:
 src/ui/Main.java
 Seleccionar la opción Run Main.main().
+---
 🛠️ Tecnologías utilizadas
 Java.
 Java Swing.
@@ -144,6 +151,7 @@ IntelliJ IDEA.
 Git.
 GitHub.
 Programación orientada a objetos.
+---
 📚 Conceptos aplicados
 Clases y objetos.
 Encapsulamiento.
@@ -158,6 +166,7 @@ Operador instanceof.
 Manejo de excepciones.
 Interfaces gráficas.
 Organización modular mediante paquetes.
+---
 ✅ Buenas prácticas
 Nombres descriptivos para clases, atributos y métodos.
 Separación de responsabilidades.
@@ -167,6 +176,7 @@ Reutilización mediante herencia.
 Programación orientada a interfaces.
 Validación de datos.
 Código ordenado y legible.
+---
 👩‍💻 Autora
 
 Javiera Paz Saavedra Pérez
@@ -175,7 +185,7 @@ Estudiante de Analista Programador
 Duoc UC
 
 Asignatura: Desarrollo Orientado a Objetos I
-
+---
 📄 Estado del proyecto
 
 Proyecto académico desarrollado de manera progresiva.
