@@ -60,6 +60,7 @@ LlanquihueTourApp/
 ├── .gitignore
 └── README.md
 
+````markdown
 ## 🧩 Actividad 1: registros y colecciones
 
 Esta actividad permite gestionar personas vinculadas con la agencia turística.
