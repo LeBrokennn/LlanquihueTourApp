@@ -106,9 +106,25 @@ Visualizar información con JOptionPane.
 
 ## 🛠️ Tecnologías utilizadas
 Java.
-Swing.
+Java Swing.
 JOptionPane.
 IntelliJ IDEA.
 Git.
 GitHub.
+Programación orientada a objetos.
+
+## 📚 Conceptos aplicados
+Clases y objetos.
+Encapsulamiento.
+Herencia.
+Polimorfismo.
+Clases abstractas.
+Interfaces.
+Sobrescritura de métodos.
+Colecciones genéricas.
+ArrayList.
+Operador instanceof.
+Manejo de excepciones.
+Interfaces gráficas.
+Organización modular mediante paquetes.
 
