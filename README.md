@@ -59,7 +59,7 @@ LlanquihueTourApp/
 │
 ├── .gitignore
 └── README.md
-
+---
 🧩 Actividad 1: registros y colecciones
 
 Esta actividad permite gestionar personas vinculadas con la agencia turística.
@@ -71,6 +71,8 @@ Búsqueda de personas por nombre.
 Filtrado por tipo de persona.
 Filtrado por comuna.
 Visualización de resultados por consola.
+---
+
 🔄 Actividad 2: herencia y polimorfismo
 
 Esta actividad amplía el sistema mediante una jerarquía de clases para representar distintos servicios turísticos.
