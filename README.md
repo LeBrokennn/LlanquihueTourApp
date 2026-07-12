@@ -60,7 +60,7 @@ LlanquihueTourApp/
 ├── .gitignore
 └── README.md
 
-````markdown
+````
 ## 🧩 Actividad 1: registros y colecciones
 
 Esta actividad permite gestionar personas vinculadas con la agencia turística.
@@ -76,4 +76,39 @@ Esta actividad permite gestionar personas vinculadas con la agencia turística.
 Filtrado por comuna.
 Visualización de resultados por consola.
 
+## 🔄 Actividad 2: herencia y polimorfismo
+
+Esta actividad amplía el sistema mediante una jerarquía de clases para representar distintos servicios turísticos.
+
+Conceptos aplicados
+Herencia.
+Polimorfismo.
+Sobrescritura de métodos.
+Colecciones genéricas.
+Separación de responsabilidades.
+Organización mediante paquetes.
+
+## 🖥️ Actividad 3: interfaces y GUI
+
+La tercera actividad incorpora nuevas entidades gestionables por la agencia y una interfaz gráfica básica.
+
+Entidades disponibles
+Guía turístico.
+Vehículo.
+Colaborador externo.
+Funcionalidades
+Registrar guías turísticos.
+Registrar vehículos.
+Registrar colaboradores externos.
+Mostrar todas las entidades.
+Diferenciar entidades mediante instanceof.
+Visualizar información con JOptionPane.
+
+## 🛠️ Tecnologías utilizadas
+Java.
+Swing.
+JOptionPane.
+IntelliJ IDEA.
+Git.
+GitHub.
 
