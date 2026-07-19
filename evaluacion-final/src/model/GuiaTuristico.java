@@ -1,7 +1,8 @@
 package model;
 
-public class GuiaTuristico extends PersonaTuristica {
+import exception.RutInvalidoException;
 
+public class GuiaTuristico extends PersonaTuristica {
     private String especialidad;
     private int aniosExperiencia;
 
@@ -10,10 +11,11 @@ public class GuiaTuristico extends PersonaTuristica {
             String nombre,
             String telefono,
             String correo,
-            Direccion direccion,,
+            Direccion direccion,
             String especialidad,
             int aniosExperiencia
-    ) {
+    ) throws RutInvalidoException {
+
         super(rut, nombre, telefono, correo, direccion);
         this.especialidad = especialidad;
         this.aniosExperiencia = aniosExperiencia;
