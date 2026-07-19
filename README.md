@@ -317,7 +317,6 @@ Seleccione una opción:
 ## 👥 Autores
 
 - **Javiera Paz Saavedra Pérez**
-- **Byron Ignacio Aguilar Vega**
 
 ---
 
