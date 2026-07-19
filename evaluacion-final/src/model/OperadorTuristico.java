@@ -1,5 +1,7 @@
 package model;
 
+import exception.RutInvalidoException;
+
 public class OperadorTuristico extends PersonaTuristica {
 
     private String tipoTransporte;
@@ -13,8 +15,10 @@ public class OperadorTuristico extends PersonaTuristica {
             Direccion direccion,
             String tipoTransporte,
             int capacidadPersonas
-    ) {
-        super(rut, nombrGit → Commite, telefono, correo, direccion);
+    ) throws RutInvalidoException {
+
+        super(rut, nombre, telefono, correo, direccion);
+
         this.tipoTransporte = tipoTransporte;
         this.capacidadPersonas = capacidadPersonas;
     }
@@ -41,22 +45,9 @@ public class OperadorTuristico extends PersonaTuristica {
     }
 
     @Override
-    public void registrar() {
-        System.out.println(
-                "Operador turístico registrado correctamente: " + getNombre()
-        );
-    }
-
-    @Override
-    public void mostrarDatos() {
-        System.out.println(this);
-    }
-
-    @Override
     public String toString() {
-        return "Tipo: " + obtenerTipo()
-                + ", " + super.toString()
-                + ", tipo de transporte: " + tipoTransporte
-                + ", capacidad de personas: " + capacidadPersonas;
+        return super.toString()
+                + "\nTipo de transporte: " + tipoTransporte
+                + "\nCapacidad de personas: " + capacidadPersonas;
     }
 }

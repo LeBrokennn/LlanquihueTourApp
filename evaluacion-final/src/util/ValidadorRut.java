@@ -1,43 +1,56 @@
 package util;
 
-import exception.RutInvalidoException;
-
 public class ValidadorRut {
 
-    public static void validar(String rut) throws RutInvalidoException {
+    public static boolean validar(String rut) {
 
-        if (rut == null || rut.isBlank()) {
-            throw new RutInvalidoException("El RUT no puede estar vacío.");
+        if (rut == null || rut.trim().isEmpty()) {
+            return false;
         }
 
-        String rutLimpio = rut.replace(".", "").replace("-", "");
+        rut = rut.replace(".", "")
+                .replace("-", "")
+                .trim()
+                .toUpperCase();
 
-        if (rutLimpio.length() < 8 || rutLimpio.length() > 9) {
-            throw new RutInvalidoException(
-                    "El RUT debe tener entre 8 y 9 caracteres."
-            );
+        if (rut.length() < 2) {
+            return false;
         }
 
-        String cuerpo = rutLimpio.substring(0, rutLimpio.length() - 1);
-        char digitoVerificador =
-                rutLimpio.charAt(rutLimpio.length() - 1);
+        String cuerpo = rut.substring(0, rut.length() - 1);
+        char digitoVerificadorIngresado = rut.charAt(rut.length() - 1);
 
         if (!cuerpo.matches("\\d+")) {
-            throw new RutInvalidoException(
-                    "El cuerpo del RUT solo debe contener números."
-            );
+            return false;
         }
 
-        if (!Character.isDigit(digitoVerificador)
-                && digitoVerificador != 'k'
-                && digitoVerificador != 'K') {
+        int suma = 0;
+        int multiplicador = 2;
 
-            throw new RutInvalidoException(
-                    "El dígito verificador del RUT no es válido."
-            );
+        for (int i = cuerpo.length() - 1; i >= 0; i--) {
+            suma += Character.getNumericValue(cuerpo.charAt(i))
+                    * multiplicador;
+
+            multiplicador++;
+
+            if (multiplicador == 8) {
+                multiplicador = 2;
+            }
         }
-    }
 
-    private ValidadorRut() {
+        int resto = 11 - (suma % 11);
+        char digitoVerificadorCalculado;
+
+        if (resto == 11) {
+            digitoVerificadorCalculado = '0';
+        } else if (resto == 10) {
+            digitoVerificadorCalculado = 'K';
+        } else {
+            digitoVerificadorCalculado =
+                    Character.forDigit(resto, 10);
+        }
+
+        return digitoVerificadorIngresado
+                == digitoVerificadorCalculado;
     }
 }

@@ -20,7 +20,11 @@ public abstract class PersonaTuristica implements Registrable {
             Direccion direccion
     ) throws RutInvalidoException {
 
-        ValidadorRut.validar(rut);
+        if (!ValidadorRut.validar(rut)) {
+            throw new RutInvalidoException(
+                    "El RUT ingresado no es válido."
+            );
+        }
 
         this.rut = rut;
         this.nombre = nombre;
@@ -29,12 +33,20 @@ public abstract class PersonaTuristica implements Registrable {
         this.direccion = direccion;
     }
 
+    public abstract String obtenerTipo();
+
     public String getRut() {
         return rut;
     }
 
     public void setRut(String rut) throws RutInvalidoException {
-        ValidadorRut.validar(rut);
+
+        if (!ValidadorRut.validar(rut)) {
+            throw new RutInvalidoException(
+                    "El RUT ingresado no es válido."
+            );
+        }
+
         this.rut = rut;
     }
 
@@ -70,18 +82,25 @@ public abstract class PersonaTuristica implements Registrable {
         this.direccion = direccion;
     }
 
-    public String getComuna() {
-        return direccion.getComuna();
+    @Override
+    public void registrar() {
+        System.out.println(
+                obtenerTipo() + " registrado correctamente."
+        );
     }
 
-    public abstract String obtenerTipo();
+    @Override
+    public void mostrarDatos() {
+        System.out.println(this);
+    }
 
     @Override
     public String toString() {
-        return "RUT: " + rut
-                + ", nombre: " + nombre
-                + ", teléfono: " + telefono
-                + ", correo: " + correo
-                + ", dirección: " + direccion;
+        return "\nTipo: " + obtenerTipo()
+                + "\nRUT: " + rut
+                + "\nNombre: " + nombre
+                + "\nTeléfono: " + telefono
+                + "\nCorreo: " + correo
+                + "\nDirección: " + direccion;
     }
 }
